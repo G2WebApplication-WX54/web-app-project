@@ -4,12 +4,9 @@ import Toolbar from "./components/toolbar.component.vue";
 </script>
 
 <template>
-  <div>
+
     <Toolbar></Toolbar>
-  </div>
-<div>
-  <router-view></router-view>
-  </div>
+    <router-view></router-view>
 </template>
 
 <style scoped>
