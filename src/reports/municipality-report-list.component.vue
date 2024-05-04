@@ -15,8 +15,9 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="flex justify-content-center flex-wrap">
     <h1>Reports List</h1>
+  </div>
     <Card class="cardpe">
       <template #content>
         <div class="flex flex-wrap gap-1 md:gap-4 xl:gap-8 ">
@@ -32,9 +33,8 @@ export default {
             </OrderList>
         </div>
       </template>
-
     </Card>
-  </div>
+
 </template>
 
 <style scoped>
