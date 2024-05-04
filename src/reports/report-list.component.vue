@@ -45,9 +45,12 @@ export default {
       </template>
       <template #content>
         <div class="flex flex-wrap gap-1 md:gap-4 xl:gap-8 ">
-          <div class="flex-initial flex align-items-center justify-content-center">
+          <!--<div class="flex-initial flex align-items-center justify-content-center">
             <Button label="New Report" @click="agregarElemento" />
-          </div>
+          </div>-->
+          <router-link to="/report-form">
+            <Button label="New Report" />
+          </router-link>
           <div class="flex-initial flex align-items-center justify-content-center">
             <OrderList class="w-30rem" v-model="elementos" list-style-type="decimal">
               <template #item="reports">

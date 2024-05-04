@@ -22,7 +22,7 @@ const router= createRouter({
         {path: '/authorityProfile', component: Authority},
         {path: '/citizen/map', component: MapCitizen, name: 'mapcitizen' },
         {path: '/edit-profile', component: EditProfileView},
-        //{path: '/report', component: muniReport},
+        {path: '/muni-report', component: muniReport},
         {path: '/report', component: reportList},
         {path: '/government/map', component: MapGovernment, name: 'mapgovernment' },
         {path: '/report-form', component: ReportFormView},

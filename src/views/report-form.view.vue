@@ -43,7 +43,9 @@
             <div class="column">
               <img src="../assets/Map-Placeholder.png" alt="Map" class="map-image">
               <div class="button-container">
-                <button type="submit">Send</button>
+                <router-link to="/muni-report">
+                  <button type="submit">Send</button>
+                </router-link>
               </div>
             </div>
           </form>
@@ -462,3 +464,5 @@ button:hover {
   }
 }
 </style>
+<script setup lang="ts">
+</script>
