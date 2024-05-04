@@ -22,7 +22,9 @@
       </div>
     </div>
     <div class="buttons">
-      <button>Edit Profile</button>
+      <router-link to="/edit-profile-authority">
+        <button>Edit Profile</button>
+      </router-link>
       <router-link to="/">
         <button>Log Out</button>
       </router-link>
