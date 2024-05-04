@@ -23,7 +23,7 @@
                     <input type="text" id="district" name="district" required class="border-black" placeholder="District">
                   </div>
                   <div class="column-half">
-                    <label for="location" class="label-black">Location (Optional):</label>
+                    <label for="location" class="label-black">Location:</label>
                     <input type="text" id="location" name="location" class="border-black" placeholder="Location">
                   </div>
                 </div>
@@ -251,41 +251,65 @@ button:hover {
 /* These styles are already defined in your provided CSS */
 
 @media (max-width: 1100px) {
-  label, input, select, textarea, button {
-    font-size: clamp(10px, 2.5vw, 14px); /* Smaller font sizes for all form elements */
+  .form-container input, .form-container select, .form-container textarea, .form-container button {
+    font-size: clamp(10px, 2.5vw, 12px); /* Smaller font sizes for all form elements */
   }
-
-  input, select, textarea {
-    padding: 0.6em; /* Slightly reduced padding */
+  .form-container label {
+    font-size: clamp(10px, 2.5vw, 12px); /* Smaller yet readable font sizes for labels */
   }
-
+  .form-container input, .form-container select, .form-container textarea, #description{
+    width: 85%; /* Reduces width to 80% to make inputs narrower */
+  }
   .form-group {
     margin-bottom: 10px; /* Reduced margin for tighter layout */
   }
-
   .button-container button {
     padding: 8px 40px; /* Reduced button padding */
+  }
+  .date-time-container #date,
+  .date-time-container #time {
+    flex: none; /* Disable flex grow to manage width manually */
+    width: 40%; /* Reduce the width of each input */
+    padding: 0.6em; /* Smaller padding */
+    margin-right: 10px; /* Smaller margin between date and time inputs */
+    font-size: clamp(10px, 2.5vw, 12px); /* Smaller font size */
   }
   /* Styles for screens up to 1100px wide */
   .page-container {
     padding: 0.01rem; /* Minimal padding to maintain layout integrity */
+
   }
 
   .form-container {
     padding: 10px;
   }
-
+  .column-half #district,
+  .column-half #location {
+    width: 70%; /* Reduce the width of each input */
+    padding: 0.7em; /* Smaller padding */
+    margin-right: 5px; /* Smaller margin for the district input */
+    font-size: clamp(10px, 2.5vw, 12px); /* Smaller font size */
+  }
+  .column-half:last-child #location {
+    margin-right: 0; /* Remove margin for the last input to fit the reduced width */
+  }
+  .row {
+    justify-content: space-between; /* Ensure inputs are closer but neatly aligned */
+  }
   .column {
     padding: 0 20px; /* Slightly reduce padding */
     width: 100%; /* Make columns full width */
   }
 
   .map-image {
-    max-width: 100%; /* Adjust max-width for responsiveness */
+
+    width:60%;
     order: -1; /* Move map above the form */
+    margin-right:100px;
   }
 
   .button-container button {
+    margin-left:-50px;
     padding: 10px 50px; /* Adjust button padding */
   }
 
@@ -315,38 +339,126 @@ button:hover {
 
   .evidence-container {
     flex-direction: column; /* Stack evidence label and button vertically */
+    margin-left:-50px;
+  }
+  .profile-bg {
+
+    width: 80%; /* Adjust width to your desired value */
+    margin-right:50px;
   }
 }
 
 @media (max-width: 480px) {
-  /* Styles for screens up to 480px wide */
-  .page-container {
-    padding: 1rem;
+  .form-container input, .form-container select, .form-container textarea, .form-container button {
+    font-size: clamp(10px, 1vw, 10px); /* Smaller font sizes for all form elements */
+  }
+  form-container label {
+    font-size: clamp(10px, 2.5vw, 10px); /* Smaller yet readable font sizes for labels */
+  }
+  .form-container input, .form-container select, .form-container textarea, #description{
+    width: 75%; /* Reduces width to 80% to make inputs narrower */
+  }
+  .form-group {
+    margin-bottom: 10px; /* Reduced margin for tighter layout */
+  }
+  .date-time-container #date,
+  .date-time-container #time {
+    flex: none; /* Disable flex grow to manage width manually */
+    width: 33%; /* Reduce the width of each input */
+    padding: 0.6em; /* Smaller padding */
+    margin-right: 10px; /* Smaller margin between date and time inputs */
+    font-size: clamp(10px, 2.5vw, 12px); /* Smaller font size */
   }
 
+  /* Styles for screens up to 1100px wide */
+  .page-container {
+    padding: 0.01rem; /* Minimal padding to maintain layout integrity */
+    padding-bottom: 90px; /* Add padding to the bottom */
+  }
+  .column-half {
+    display: inline-block; /* Ensures inputs are inline */
+    width: 45%; /* Adjusted width to fit side by side */
+  }
+
+  .column-half #district,
+  .column-half #location {
+    width: 45%; /* Adjust the width to give more room */
+    padding: 0.7em; /* Consistent padding */
+    margin-right: 2px; /* Reduce right margin to bring closer */
+  }
+
+  .column-half:last-child #location {
+    margin-right: 0; /* No margin on the right for the last input */
+  }
+  .column-half:last-child label {
+    position: relative;
+  }
+  .row {
+    justify-content: space-between; /* Adjust alignment */
+  }
   .column {
-    padding: 0 10px;
+    padding: 0 20px; /* Slightly reduce padding */
+    width: 100%; /* Make columns full width */
   }
 
   .map-image {
-    width: 100%; /* Ensure it fills the container */
+    width: 60%;
+    margin-left:30px;
+    order: -1; /* Move map above the form */
   }
 
   .button-container button {
-    padding: 8px 40px; /* Slightly smaller buttons for smaller screens */
+    padding: 10px 50px; /* Adjust button padding */
   }
 
-  h1 {
-    font-size: 24px; /* Adjust font size for smaller screens */
+  .form-group {
+    margin-bottom: 15px; /* Adjust spacing */
   }
 
-  .form-container {
-    padding: 8px;
+  .page-container p {
+    text-align: center; /* Align the paragraph to the left */
+
+    font-size: clamp(10px, 1vw, 10px); /* Responsive font sizing */
+  }
+
+  .form-flex {
+    flex-direction: column; /* Stack form columns vertically */
+  }
+
+  .column-half {
+    padding: 0; /* Remove column padding */
+    display: block; /* Stack inputs vertically */
+  }
+
+  .form-group.date-time-container {
+    flex-direction: column; /* Stack date and time inputs vertically */
+    align-items: stretch; /* Stretch inputs to fill the width */
+  }
+
+  .evidence-container {
+    order: -2; /* Move evidence container above the form */
+    margin-bottom: 20px; /* Add margin to separate it from other elements */
+    margin-left:-40px;
+  }
+
+  .button-container {
+    order: -1; /* Keep button container on the same row as the evidence */
+    margin-left: 10px; /* Move the button container to the right edge of the parent container */
+    margin-bottom: 20px; /* Add margin to separate it from other elements */
+  }
+  .upload-button {
+    padding: 5px 20px;  /* Increase padding to make the button larger */
+    font-size: 10px;  /* Increase font size for better readability */
+    background-color: white;
+    border-radius: 8px;  /* Slightly larger border-radius for a more rounded look */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color:black;
+  }
+  .profile-bg {
+
+    width: 55%; /* Adjust width to your desired value */
+    margin-left:10px;
   }
 }
-
-
-
 </style>
-<script setup lang="ts">
-</script>
