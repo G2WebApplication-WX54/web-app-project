@@ -2,7 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 
 import Authority from '../pages/authorityProfile.page.vue'
 import User from '../pages/userProfile.page.vue'
-import Profile from "../pages/profile.vue";
+import Profile from "../pages/profile.page.vue";
 import MapCitizen from "../views/mapcitizen.view.vue"
 import MapGovernment from "../views/mapgovernment.view.vue"
 import EditProfileView from '../views/edit-profile.view.vue';
