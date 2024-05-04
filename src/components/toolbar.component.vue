@@ -8,7 +8,8 @@
       <li><img src="../assets/PeaceApp.png" alt="PeaceApp" /></li> <!-- Left-aligned icon -->
     </ul>
     <ul class="right-icons">
-      <li><a href="/map"><img src="../assets/Map.png" alt="Map" /></a></li>
+
+      <li><a href="/citizen/map"><img src="../assets/Map.png" alt="Map" /></a></li>
       <li><a href="/report"><img src="../assets/Report.png" alt="Report" /></a></li>
       <li><a href="/notification"><img src="../assets/Notification.png" alt="Notification" /></a></li>
       <li><a href="/profile"><img src="../assets/Profile.png" alt="Profile" /></a></li>
@@ -89,10 +90,14 @@
   .toolbar {
     padding: 5px 8px;  /* Minimal padding for very small screens */
   }
+  .toolbar .right-icons {
+    margin-right: 200px;  /* Adjusted margin for right-aligned icons */
+  }
 
   .toolbar .right-icons li {
     margin-left: 5px;  /* Minimal spacing between items */
   }
+
   .left-icons img {
     height: 30px;  /* Further reduction in icon size */
   }
