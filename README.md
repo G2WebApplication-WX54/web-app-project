@@ -15,3 +15,9 @@ npm install vue-router@4 <br>
 node_modules/
 
 package-lock.json
+
+##To-do
+organizar componentes en carpetas
+arreglar css general y separar para cada componente
+merge develop a cada rama
+seguir creando y mejorando componentes
