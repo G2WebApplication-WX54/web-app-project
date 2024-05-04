@@ -62,7 +62,7 @@ onMounted(() => {
     <div class="search">
       <h1 class="titulo">Find Route</h1>
       <div class="inputDesino">
-        <h2 class="subtitulo">¿Where do you want to go today?</h2>
+        <h2 class="subtitulo">Where do you want to go today?</h2>
         <div class="pv-inputgroup">
           <pv-inputtext class="input" v-model="ubicacion" type="text" placeholder="	"/>
 
