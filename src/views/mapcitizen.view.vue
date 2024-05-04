@@ -96,9 +96,7 @@ onMounted(() => {
 <style scoped>
 .container {
   background-color: #01A1FF;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 100px;
+  padding: 20px 0;
 }
 .search {
   display: block;
