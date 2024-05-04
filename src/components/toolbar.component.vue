@@ -90,6 +90,7 @@
   .toolbar {
     padding: 5px 8px;  /* Minimal padding for very small screens */
   }
+
   .toolbar .right-icons {
     margin-right: 200px;  /* Adjusted margin for right-aligned icons */
   }
@@ -101,9 +102,11 @@
   .left-icons img {
     height: 30px;  /* Further reduction in icon size */
   }
+
   .right-icons img {
     height: 20px;  /* Smallest icon size for mobile devices */
   }
 }
+
 </style>
 
