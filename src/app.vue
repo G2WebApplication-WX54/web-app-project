@@ -1,13 +1,14 @@
 <script >
 import ReportListComponent from "./reports/report-list.component.vue";
+import MunicipalityReportListComponent from "./reports/municipality-report-list.component.vue";
 export default{
   name: "app",
-  components: {ReportListComponent}
+  components: {ReportListComponent, MunicipalityReportListComponent}
 }
 </script>
 
 <template>
-<ReportListComponent/>
+<MunicipalityReportListComponent></MunicipalityReportListComponent>
 </template>
 
 <style scoped>
