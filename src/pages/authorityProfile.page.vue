@@ -22,7 +22,9 @@
     </div>
     <div class="buttons">
       <button>Edit Profile</button>
-      <button>Logout</button>
+      <router-link to="/">
+        <button>Log Out</button>
+      </router-link>
       <button>Delete Account</button>
     </div>
   </div>
