@@ -10,15 +10,14 @@
       </div>
 
       <div class="right">
-        <p>Nombre completo: Anatoly Andrey noriega Suschenko</p>
-        <p>Correo: lorersz@gmail.com</p>
-        <p>Distrito: Breña</p>
-        <p>Tipo de Ruta: Segura</p>
-        <p>Frecuencia de Alertas: Alta</p>
-        <p>Ubicación: NA</p>
-        <p>Descripción: Entusiasta defensor de la seguridad comunitaria y usuario activo de la plataforma. Me dedico
-        a compartir información crucial y a mantenerme al tanto de las actualizaciones para garantizar traslados
-        seguros para mí y para los demás.</p>
+        <p>Full name: Anatoly Andrey noriega Suschenko</p>
+        <p>E-mail: lorersz@gmail.com</p>
+        <p>District: Breña</p>
+        <p>Route Type: Safe</p>
+        <p>Alert Frequency: High</p>
+        <p>Location: NA</p>
+        <p>Description: Enthusiastic advocate of community safety and active user of the platform. I dedicate myself
+          to share crucial information and stay on top of updates to ensure transfers safe for me and others.</p>
       </div>
     </div>
     <div class="buttons">
