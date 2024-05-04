@@ -7,6 +7,7 @@ import MapCitizen from "../views/mapcitizen.view.vue"
 import EditProfileView from '../views/edit-profile.view.vue';
 import ReportFormView from "../views/report-form.view.vue";
 import SendAlert from "../components/SendAlert.vue";
+import Notification from '../pages/notifications.page.vue'
 
 const router= createRouter({
     history: createWebHistory(),
@@ -18,6 +19,7 @@ const router= createRouter({
         {path: '/edit-profile', component: EditProfileView},
         {path: '/report-form', component: ReportFormView},
         {path: '/view-notifications', component: SendAlert},
+        {path: '/notifications', component: Notification}
     ]
 });
 

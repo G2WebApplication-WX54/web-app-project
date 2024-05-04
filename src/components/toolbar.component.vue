@@ -11,7 +11,7 @@
 
       <li><a href="/citizen/map"><img src="../assets/Map.png" alt="Map" /></a></li>
       <li><a href="/report"><img src="../assets/Report.png" alt="Report" /></a></li>
-      <li><a href="/notification"><img src="../assets/Notification.png" alt="Notification" /></a></li>
+      <li><a href="/notifications"><img src="../assets/Notification.png" alt="Notification" /></a></li>
       <li><a href="/profile"><img src="../assets/Profile.png" alt="Profile" /></a></li>
     </ul>
   </nav>
