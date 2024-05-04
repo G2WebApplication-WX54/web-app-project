@@ -6,18 +6,19 @@
   <div class="container">
     <div class="content">
       <div class="left">
-        <img src="../assets/municipalidad.png" alt="Usuario" class="img" />
+        <img src="../assets/municipalidad.png" alt="User" class="img" />
       </div>
 
       <div class="right">
-        <p>Nombre de la Municipalidad: Municipalidad Distrital de La Victoria</p>
-        <p>Correo: info@munilavictoria.gob.pe</p>
-        <p>Número de Contacto: (01) 510-2070</p>
-        <p>Dirección de Oficina: Av. Iquitos 500, La victoria 18018</p>
-        <p>Descripción: Este perfil facilita la interacción entre la Municipalidad de La Victoria y los ciudadanos,
-          permitiendo a las autoridades locales monitorear y responder a incidentes de seguridad. Encuentra aquí
-          actualizaciones oficiales, alertas de seguridad y un enlace directo para reportar emergencias, todo enfocado
-          en mejorar la seguridad y calidad de vida en el distrito.</p>
+        <p>Name of the Municipality: Municipalidad Distrital de La Victoria</p>
+        <p>Email: info@munilavictoria.gob.pe</p>
+        <p>Contact Number: (01) 510-2070</p>
+        <p>Office Address: 500 Iquitos Ave, La victoria 18018</p>
+        <p>Description: This profile facilitates the interaction between the Municipality of La Victoria and citizens,
+          allowing local authorities to monitor and respond to security incidents. Find here
+          official updates, security alerts and a direct link to report emergencies, all in focus
+          to improve safety and life quality in the district.</p>
+        
       </div>
     </div>
     <div class="buttons">
