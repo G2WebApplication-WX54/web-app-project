@@ -11,5 +11,7 @@ npm install vue-router@4 <br>
 
 ## Create .gitignore
 .idea/
+
 node_modules/
+
 package-lock.json
