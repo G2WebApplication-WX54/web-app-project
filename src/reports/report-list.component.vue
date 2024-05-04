@@ -34,7 +34,7 @@ export default {
   }
 }
 
-</script>
+ </script>
 
 <template>
   <div class="container">
@@ -76,7 +76,13 @@ export default {
     align-items: center;
   }
   .cardpe{
-    width:80%;
+    width:70%;
   }
 
 </style>
+
+
+
+
+
+
