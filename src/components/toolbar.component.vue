@@ -5,7 +5,7 @@
 <template>
   <nav class="toolbar">
     <ul class="left-icons">
-      <li><img src="../assets/PeaceApp.png" alt="PeaceApp" /></li> <!-- Left-aligned icon -->
+      <li><a href="/"><img src="../assets/PeaceApp.png" alt="PeaceApp" /></a></li> <!-- Left-aligned icon -->
     </ul>
     <ul class="right-icons">
 

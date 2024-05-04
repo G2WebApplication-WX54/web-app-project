@@ -9,10 +9,12 @@ import EditProfileView from '../views/edit-profile.view.vue';
 import ReportFormView from "../views/report-form.view.vue";
 import SendAlert from "../components/SendAlert.vue";
 import Notification from '../pages/notifications.page.vue'
+import  Principal from '../pages/principal.page.vue'
 
 const router= createRouter({
     history: createWebHistory(),
     routes: [
+        {path: '/', component: Principal},
         {path: '/profile', component: Profile},
         {path: '/userProfile', component: User},
         {path: '/authorityProfile', component: Authority},
