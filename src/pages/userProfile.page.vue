@@ -24,7 +24,7 @@
       <router-link to="/edit-profile">
         <button>Edit Profile</button>
       </router-link>
-      <router-link to="">
+      <router-link to="/">
         <button>Log Out</button>
       </router-link>
       <button>Delete Account</button>

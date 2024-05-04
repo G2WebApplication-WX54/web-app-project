@@ -10,11 +10,9 @@ import Button from "primevue/button";
 import Card from "primevue/card";
 import 'primevue/resources/themes/aura-light-green/theme.css';
 
-import PrimeVue from 'primevue/config'
 import 'primeicons/primeicons.css'
 
 import Toolbar from "primevue/toolbar";
-import Button from "primevue/button";
 import InputText from "primevue/inputtext";
 
 import InputGroup from "primevue/inputgroup";

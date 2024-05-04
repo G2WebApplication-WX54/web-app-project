@@ -24,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;  /* Initial padding for large screens */
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
