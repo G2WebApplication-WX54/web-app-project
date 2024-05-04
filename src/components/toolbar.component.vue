@@ -9,10 +9,10 @@
     </ul>
     <ul class="right-icons">
 
-      <li><a href="/citizen/map"><img src="../assets/Map.png" alt="Map" /></a></li>
-      <li><a href="/report"><img src="../assets/Report.png" alt="Report" /></a></li>
-      <li><a href="/notifications"><img src="../assets/Notification.png" alt="Notification" /></a></li>
-      <li><a href="/profile"><img src="../assets/Profile.png" alt="Profile" /></a></li>
+      <li><router-link to="/citizen/map"><img src="../assets/Map.png" alt="Map" /></router-link></li>
+      <li><router-link to="/report"><img src="../assets/Report.png" alt="Report" /></router-link></li>
+      <li><router-link to="/notifications"><img src="../assets/Notification.png" alt="Notification" /></router-link></li>
+      <li><router-link to="/profile"><img src="../assets/Profile.png" alt="Profile" /></router-link></li>
     </ul>
   </nav>
 </template>

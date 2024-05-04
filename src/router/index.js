@@ -10,6 +10,8 @@ import ReportFormView from "../views/report-form.view.vue";
 import SendAlert from "../components/SendAlert.vue";
 import Notification from '../pages/notifications.page.vue'
 import  Principal from '../pages/principal.page.vue'
+import muniReport from '../reports/municipality-report-list.component.vue'
+import reportList from '../reports/report-list.component.vue'
 
 const router= createRouter({
     history: createWebHistory(),
@@ -20,6 +22,8 @@ const router= createRouter({
         {path: '/authorityProfile', component: Authority},
         {path: '/citizen/map', component: MapCitizen, name: 'mapcitizen' },
         {path: '/edit-profile', component: EditProfileView},
+        //{path: '/report', component: muniReport},
+        {path: '/report', component: reportList},
         {path: '/government/map', component: MapGovernment, name: 'mapgovernment' },
         {path: '/report-form', component: ReportFormView},
         {path: '/view-notifications', component: SendAlert},
