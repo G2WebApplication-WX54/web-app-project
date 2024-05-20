@@ -16,8 +16,8 @@ node_modules/
 
 package-lock.json
 
-##To-do
-organizar componentes en carpetas
-arreglar css general y separar para cada componente
-merge develop a cada rama
+## To-do
+organizar componentes en carpetas<br>
+arreglar css general y separar para cada componente<br>
+merge develop a cada rama<br>
 seguir creando y mejorando componentes
