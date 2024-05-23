@@ -62,12 +62,10 @@ onMounted(() => {
     <div class="search">
       <h1 class="titulo">Find Route</h1>
       <div class="inputDesino">
-        <h2 class="subtitulo">Where do you want to go today?</h2>
+        <div class="subtitulo"><h2>Where do you want to go today?</h2></div>
         <div class="pv-inputgroup">
           <pv-inputtext class="input" v-model="ubicacion" type="text" placeholder="	"/>
-
           <button class="icon" @click="buscarCoordenadas"><i class="pi pi-search" style="color: black"></i></button>
-
         </div> <!-- pv-inputgroup -->
       </div> <!-- inputDestino -->
       <div class="map">
@@ -96,7 +94,7 @@ onMounted(() => {
 <style scoped>
 .container {
   background-color: #01A1FF;
-  padding: 20px 0;
+  padding: 70px 0 0 0;
 }
 .search {
   display: block;
@@ -109,7 +107,7 @@ onMounted(() => {
   font-size: 36px;
   margin-bottom: 20px;
 }
-.subtitulo {
+h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -127,7 +125,6 @@ onMounted(() => {
 }
 .input {
   border: none;
-  border-right: solid black;
   border-radius: 5px;
   padding: 5px;
   width: 90%;

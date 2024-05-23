@@ -23,5 +23,11 @@ import Toolbar from "./components/toolbar.component.vue";
   </main>
 </template>
 <style scoped>
-
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 500px;
+  min-height: 100vh;
+}
 </style>
