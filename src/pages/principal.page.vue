@@ -54,18 +54,21 @@ button {
 }
 .container {
   display: flex;
-  margin-top: 60px;
   font-family: 'Montserrat', sans-serif;
   color: black;
   padding: 20px;
   flex-wrap: wrap;
   height: auto;
+  text-align: center;
+  margin: 0;
+  place-items: center;
+  min-width: 500px;
+  min-height: 100vh;
 }
 .textbox {
   font-size: 20px;
   margin-bottom: 10px;
 }
-
 
 .box1, .box2 {
   flex: 1;
@@ -75,7 +78,10 @@ button {
 }
 
 .textbox {
-  width: 100%; /* El ancho del textbox ocupará todo el ancho del contenedor */
-  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del textbox */
+  width: 100%;
+  box-sizing: border-box;
 }
+
+
+
 </style>

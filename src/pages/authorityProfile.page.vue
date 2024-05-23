@@ -4,22 +4,20 @@
 
 <template>
   <div class="container">
-    <div class="content">
-      <div class="left">
-        <img src="../assets/municipalidad.png" alt="User" class="img" />
-      </div>
+    <div class="left">
+      <img src="../assets/municipalidad.png" alt="User" class="img" />
+    </div>
 
-      <div class="right">
-        <p>Name of the Municipality: Municipalidad Distrital de La Victoria</p>
-        <p>Email: info@munilavictoria.gob.pe</p>
-        <p>Contact Number: (01) 510-2070</p>
-        <p>Office Address: 500 Iquitos Ave, La victoria 18018</p>
-        <p>Description: This profile facilitates the interaction between the Municipality of La Victoria and citizens,
-          allowing local authorities to monitor and respond to security incidents. Find here
-          official updates, security alerts and a direct link to report emergencies, all in focus
-          to improve safety and life quality in the district.</p>
-        
-      </div>
+    <div class="right">
+      <p>Name of the Municipality: Municipalidad Distrital de La Victoria</p>
+      <p>Email: info@munilavictoria.gob.pe</p>
+      <p>Contact Number: (01) 510-2070</p>
+      <p>Office Address: 500 Iquitos Ave, La victoria 18018</p>
+      <p>Description: This profile facilitates the interaction between the Municipality of La Victoria and citizens,
+        allowing local authorities to monitor and respond to security incidents. Find here
+        official updates, security alerts and a direct link to report emergencies, all in focus
+        to improve safety and life quality in the district.</p>
+
     </div>
     <div class="buttons">
       <router-link to="/edit-profile-authority">
@@ -54,18 +52,21 @@ button {
   width: 90%;
   max-width: 1000px;
   height: auto;
-}
-.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .img{
   width: 22vw;
 }
 .left {
-  margin-right: 20px;
   display: flex;
   align-items: center;
+  flex: 1;
 }
 .right {
   font-family: 'Montserrat', sans-serif;
@@ -73,5 +74,18 @@ button {
   text-align: justify;
   font-weight: bold;
   font-size: 18px;
+  flex: 1 15%;
+}
+.buttons {
+  flex: 100%;
+}
+@media (max-width: 600px) {
+  .left, .right {
+    flex: 1 1 100%; /* Toma el 100% del contenedor en pantallas pequeñas */
+  }
+  button{
+    width: 100%;
+  }
+
 }
 </style>

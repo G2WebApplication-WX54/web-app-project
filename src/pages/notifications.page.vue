@@ -45,21 +45,20 @@ export default {
   <Toolbar/>
   <main>
     <div class="container">
-      <router-view/>
       <button @click="addNotification">Update Notification</button>
-
       <NotificationList
           :Notifications="NotificationData"
           :addNotification="addNotification"
       />
-    </div>
-    <button class="send-alert" @click="showSendAlert">Send Alert</button>
+      <button class="send-alert" @click="showSendAlert">Send Alert</button>
 
-    <SendAlert
-        :message="alertMessage"
-        :togglePopup="hideSendAlert"
-    />
+      <SendAlert
+          :message="alertMessage"
+          :togglePopup="hideSendAlert"
+      />
+    </div>
   </main>
+
 </template>
 
 <style scoped>
@@ -74,5 +73,16 @@ button {
   cursor: pointer;
   font-size: 20px;
   height: 45px;
+}
+.container {
+  padding: 70px;
+  display: grid;
+  place-items: center;
+  min-width: 500px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

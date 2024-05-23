@@ -4,21 +4,18 @@
 
 <template>
   <div class="container">
-    <div class="content">
-      <div class="left">
-        <img src="../assets/Anatoly.png" alt="Usuario" class="img" />
-      </div>
-
-      <div class="right">
-        <p>Full name: Anatoly Andrey noriega Suschenko</p>
-        <p>E-mail: lorersz@gmail.com</p>
-        <p>District: Breña</p>
-        <p>Route Type: Safe</p>
-        <p>Alert Frequency: High</p>
-        <p>Location: NA</p>
-        <p>Description: Enthusiastic advocate of community safety and active user of the platform. I dedicate myself
-          to share crucial information and stay on top of updates to ensure transfers safe for me and others.</p>
-      </div>
+    <div class="left">
+      <img src="../assets/Anatoly.png" alt="Usuario" class="img" />
+    </div>
+    <div class="right">
+      <p>Full name: Anatoly Andrey Noriega Suschenko</p>
+      <p>E-mail: lorersz@gmail.com</p>
+      <p>District: Breña</p>
+      <p>Route Type: Safe</p>
+      <p>Alert Frequency: High</p>
+      <p>Location: NA</p>
+      <p>Description: Enthusiastic advocate of community safety and active user of the platform. I dedicate myself
+        to share crucial information and stay on top of updates to ensure transfers safe for me and others.</p>
     </div>
     <div class="buttons">
       <router-link to="/edit-profile">
@@ -53,18 +50,21 @@ button {
   width: 90%;
   max-width: 1000px;
   height: auto;
-}
-.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .img{
   width: 22vw;
 }
 .left {
-  margin-right: 20px;
   display: flex;
   align-items: center;
+  flex: 1;
 }
 .right {
   font-family: 'Montserrat', sans-serif;
@@ -72,5 +72,19 @@ button {
   text-align: justify;
   font-weight: bold;
   font-size: 18px;
+  flex: 1 15%;
 }
+.buttons {
+  flex: 100%;
+}
+@media (max-width: 600px) {
+  .left, .right {
+    flex: 1 1 100%; /* Toma el 100% del contenedor en pantallas pequeñas */
+  }
+  button{
+    width: 100%;
+  }
+
+}
+
 </style>

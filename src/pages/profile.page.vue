@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="container">
     <router-link to="/userProfile">
       <button>User</button>
     </router-link>
@@ -23,5 +23,16 @@ button {
   padding: 0.5em 1em;
   margin: 0.5em;
   cursor: pointer;
+  font-size: 20px;
+  height: 45px;
+}
+.container {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

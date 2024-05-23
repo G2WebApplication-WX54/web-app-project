@@ -11,9 +11,9 @@ import Toolbar from "./components/toolbar.component.vue";
 </script>
 
 <template>
-  <div>
+  <header>
     <Toolbar/>
-  </div>
+  </header>
   <main>
     <div class="container">
       <router-view/>
@@ -23,4 +23,11 @@ import Toolbar from "./components/toolbar.component.vue";
   </main>
 </template>
 <style scoped>
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 500px;
+  min-height: 100vh;
+}
 </style>
