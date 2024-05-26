@@ -64,7 +64,7 @@ button {
 .left {
   display: flex;
   align-items: center;
-  flex: 1;
+  flex: 1 15%;
 }
 .right {
   font-family: 'Montserrat', sans-serif;

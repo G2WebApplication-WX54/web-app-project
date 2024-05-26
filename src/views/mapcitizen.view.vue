@@ -87,7 +87,6 @@ onMounted(() => {
         <div v-if="error">{{ error }}</div>
       </div>
     </div> <!-- search -->
-
   </div> <!-- container -->
 </template>
 

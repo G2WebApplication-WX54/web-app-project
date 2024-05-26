@@ -43,7 +43,7 @@ const heatmapData = [
 <style scoped>
 .container {
   background-color: #01A1FF;
-  padding: 20px 0;
+  padding: 70px 0 0 0;
 }
 .heat-map {
   display: block;
